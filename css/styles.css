@@ -27,6 +27,12 @@ a {
   color: inherit;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 :root {
   --colors-pink: hsl(322, 100%, 66%);
   --colors-very-pale-cyan: hsl(193, 100%, 96%);
@@ -40,3 +46,84 @@ a {
 body {
   font: var(--weight-normal) 1.125rem 'Open Sans', sans-serif;
 }
+
+a,
+h1,
+h2 {
+  text-transform: capitalize;
+}
+
+.pill-link {
+  padding: 1rem 4rem;
+  border-radius: 4rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  white-space: nowrap;
+  font-weight: var(--weight-bold);
+  transition: opacity ease-in-out 0.3s;
+}
+
+.pill-link:hover {
+  opacity: 0.7;
+}
+
+.primary-link {
+  background-color: var(--colors-pink);
+  color: #fff;
+  padding-block: 1.25rem;
+}
+
+.secondary-link {
+  background-color: #fff;
+}
+
+.app-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 4rem;
+  color: var(--colors-very-dark-cyan);
+}
+
+.app-header .app-logo {
+  width: 10rem;
+}
+
+/* Hero Section */
+
+.hero-section {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rem 4rem 3rem;
+  background: url('../images/bg-hero-desktop.svg') no-repeat top/cover
+    var(--colors-very-pale-cyan);
+}
+
+.hero-section > img {
+  width: 50%;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 40%;
+  color: var(--colors-very-dark-cyan);
+}
+
+.hero-info h1 {
+  font: var(--weight-semi-bold) 2.5rem 'Poppins', sans-serif;
+}
+
+.hero-info > .pill-link {
+  font-size: 0.875rem;
+}
+
+/* ------------ */
