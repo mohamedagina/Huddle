@@ -1,0 +1,42 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --colors-pink: hsl(322, 100%, 66%);
+  --colors-very-pale-cyan: hsl(193, 100%, 96%);
+  --colors-very-dark-cyan: hsl(192, 100%, 9%);
+  --colors-grayish-blue: hsl(208, 11%, 55%);
+  --weight-normal: 400;
+  --weight-semi-bold: 600;
+  --weight-bold: 700;
+}
+
+body {
+  font: var(--weight-normal) 1.125rem 'Open Sans', sans-serif;
+}
